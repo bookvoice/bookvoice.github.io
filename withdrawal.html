@@ -175,6 +175,80 @@
       color: var(--muted);
     }
 
+    .site-footer {
+  margin-top: 60px;
+  padding: 40px 20px;
+  background: linear-gradient(to top, #e3ded2, #ebe6dc);
+  border-top: 1px solid #d8cfbf;
+}
+
+.footer-inner {
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.95rem;
+  color: #1f3550;
+  position: relative;
+  padding-bottom: 4px;
+  border-bottom: none;
+  transition: 0.2s ease;
+}
+
+.footer-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 1px;
+  background: #b08b57;
+  transition: 0.3s ease;
+}
+
+.footer-links a:hover::after {
+  width: 100%;
+}
+
+.footer-links a:hover {
+  color: #2d496b;
+}
+
+.footer-divider {
+  width: 80px;
+  height: 2px;
+  margin: 12px auto 14px;
+  background: linear-gradient(to right, #b08b57, transparent);
+}
+
+.footer-text {
+  font-size: 0.85rem;
+  color: #6f6a63;
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .footer-links {
+    gap: 14px;
+  }
+
+  .site-footer {
+    padding: 30px 16px;
+  }
+}
+
     @media (max-width: 700px) {
       .document {
         padding: 36px 24px 34px;
@@ -257,7 +331,6 @@
       <a href="index.html">Home</a>
       <a href="impressum.html">Legal Notice</a>
       <a href="privacy.html">Privacy Policy</a>
-      <a href="withdrawal.html">No Withdrawal</a>
     </div>
 
     <div class="footer-divider"></div>
