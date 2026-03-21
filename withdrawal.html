@@ -1,17 +1,233 @@
-<h1>No Right of Withdrawal (Digital Products)</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>No Right of Withdrawal – BookVoice</title>
+  <style>
+    :root {
+      --bg: #f4f1ea;
+      --paper: #fffdf8;
+      --ink: #1f1f1f;
+      --muted: #5d5d5d;
+      --line: #d8d1c4;
+      --accent: #2f4f6f;
+      --accent-dark: #1f3952;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
 
-<p>
-Due to the nature of digital content that is not supplied on a tangible medium (including, but not limited to, eBooks, PDF files, audio files, and software), all sales are final and no right of withdrawal or cancellation applies once the performance of the contract has begun.
-</p>
+    * {
+      box-sizing: border-box;
+    }
 
-<p>
-By completing a purchase, you expressly consent to the immediate provision of the digital content and acknowledge that you thereby waive any statutory right of withdrawal that may otherwise apply under applicable consumer protection laws.
-</p>
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background:
+        linear-gradient(rgba(244, 241, 234, 0.94), rgba(244, 241, 234, 0.94)),
+        repeating-linear-gradient(
+          0deg,
+          transparent 0,
+          transparent 31px,
+          rgba(0, 0, 0, 0.015) 32px
+        );
+      color: var(--ink);
+      line-height: 1.75;
+    }
 
-<p>
-You further acknowledge that, upon delivery or access to the digital product, the service is deemed fully performed.
-</p>
+    .page {
+      max-width: 960px;
+      margin: 60px auto;
+      padding: 0 24px;
+    }
 
-<p>
-This policy is in accordance with applicable regulations governing digital content, including but not limited to Article 16(m) of Directive 2011/83/EU (Consumer Rights Directive), as implemented in relevant national laws.
-</p>
+    .document {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      padding: 56px 52px;
+      position: relative;
+    }
+
+    .document::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 8px;
+      background: linear-gradient(90deg, var(--accent-dark), var(--accent));
+    }
+
+    .eyebrow {
+      display: inline-block;
+      font-size: 0.82rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid var(--line);
+      padding: 6px 10px;
+      margin-bottom: 18px;
+      background: #faf7f0;
+    }
+
+    h1 {
+      margin: 0 0 12px 0;
+      font-size: 2.3rem;
+      line-height: 1.2;
+      font-weight: 700;
+      color: #101010;
+    }
+
+    .subtitle {
+      margin: 0 0 30px 0;
+      color: var(--muted);
+      font-size: 1.02rem;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 18px;
+    }
+
+    h2 {
+      margin-top: 34px;
+      margin-bottom: 12px;
+      font-size: 1.18rem;
+      color: var(--accent-dark);
+      border-left: 4px solid var(--accent);
+      padding-left: 12px;
+    }
+
+    p {
+      margin: 0 0 16px 0;
+      font-size: 1.03rem;
+    }
+
+    .notice {
+      background: #f8f5ee;
+      border: 1px solid var(--line);
+      padding: 18px 20px;
+      margin: 24px 0 10px 0;
+    }
+
+    .notice strong {
+      color: var(--accent-dark);
+    }
+
+    .quote-law {
+      margin: 22px 0;
+      padding: 18px 22px;
+      background: #fbfaf6;
+      border-left: 5px solid var(--accent);
+      border-right: 1px solid var(--line);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      font-size: 0.98rem;
+    }
+
+    .quote-law em {
+      color: var(--muted);
+      display: block;
+      margin-bottom: 8px;
+      font-style: italic;
+    }
+
+    .footer-note {
+      margin-top: 34px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .top-links {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 26px;
+    }
+
+    .top-links a {
+      text-decoration: none;
+      color: var(--accent-dark);
+      border: 1px solid var(--line);
+      background: #faf7f0;
+      padding: 8px 12px;
+      font-size: 0.95rem;
+      transition: 0.2s ease;
+    }
+
+    .top-links a:hover {
+      background: #f1ebdf;
+    }
+
+    @media (max-width: 700px) {
+      .document {
+        padding: 34px 22px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .page {
+        margin: 24px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="document">
+
+      <div class="top-links">
+        <a href="index.html">Imprint</a>
+        <a href="datenschutz.html">Privacy Policy</a>
+      </div>
+
+      <div class="eyebrow">Legal Notice</div>
+
+      <h1>No Right of Withdrawal for Digital Products</h1>
+      <p class="subtitle">
+        Policy regarding digital content supplied electronically, including eBooks, PDF files, audio files, and software.
+      </p>
+
+      <div class="notice">
+        <strong>Important:</strong> Due to the nature of digital products delivered electronically and made available immediately after purchase, the statutory right of withdrawal does not apply once performance has begun under the conditions set out by applicable law.
+      </div>
+
+      <h2>1. No Withdrawal After Performance Begins</h2>
+      <p>
+        Due to the nature of digital content that is not supplied on a tangible medium, all sales are final once the delivery or provision of access to the digital product has begun.
+      </p>
+
+      <p>
+        By completing a purchase, the customer expressly agrees that the digital content may be provided immediately and acknowledges that, by consenting to the start of performance before the expiry of any withdrawal period, any otherwise applicable statutory right of withdrawal is lost.
+      </p>
+
+      <h2>2. Scope of This Policy</h2>
+      <p>
+        This policy applies to all digital products offered through this website or associated sales channels, including but not limited to eBooks, PDF documents, downloadable files, audio products, and software or software-related digital content.
+      </p>
+
+      <h2>3. Legal Basis</h2>
+      <p>
+        This policy is based on the legal rules applicable to digital content not supplied on a physical medium, including the consumer’s express consent to immediate performance and acknowledgment of the resulting loss of the right of withdrawal.
+      </p>
+
+      <div class="quote-law">
+        <em>Reference to German law:</em>
+        The right of withdrawal expires in the case of a contract for the supply of digital content not on a tangible medium if the trader has begun performance of the contract after the consumer has expressly agreed that performance should begin before the withdrawal period expires and has confirmed knowledge that, by giving such consent, the consumer loses the right of withdrawal.
+      </div>
+
+      <h2>4. Finality of Sale</h2>
+      <p>
+        Once the digital product has been delivered, made available for download, transmitted electronically, or otherwise accessed by the customer, the contractual service is considered performed in full with respect to that digital content.
+      </p>
+
+      <div class="footer-note">
+        This page is provided for legal information purposes in connection with the sale of digital products.
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
