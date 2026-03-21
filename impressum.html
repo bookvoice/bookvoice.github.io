@@ -1,66 +1,270 @@
-<h1>Legal Notice</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Legal Notice – BookVoice</title>
+  <style>
+    :root {
+      --bg: #ece8df;
+      --paper: #fffdf9;
+      --ink: #161616;
+      --text: #2e2e2e;
+      --muted: #6f6a63;
+      --line: #d8cfbf;
+      --navy: #1f3550;
+      --navy-soft: #2d496b;
+      --gold: #b08b57;
+      --gold-soft: #d8c2a0;
+      --shadow: 0 14px 40px rgba(0, 0, 0, 0.10);
+    }
 
-<p class="subtitle">
-  Information provided in accordance with applicable legal disclosure requirements for this website and its associated digital services.
-</p>
+    * {
+      box-sizing: border-box;
+    }
 
-<div class="hero-rule"></div>
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top, rgba(255,255,255,0.35), transparent 35%),
+        linear-gradient(to bottom, #efebe3 0%, #e7e2d8 100%);
+      line-height: 1.8;
+    }
 
-<div class="important-box">
-  <strong>Important Notice:</strong>
-  This Legal Notice contains the provider identification and essential contact information relating to the operation of this website and associated digital offerings.
-</div>
+    .page {
+      max-width: 980px;
+      margin: 48px auto;
+      padding: 0 20px;
+    }
 
-<h2>1. Information according to § 5 DDG</h2>
-<div class="contact-block">
-  <p>
-    <strong>BookVoice Studio</strong><br>
-    [Your First Name / Last Name]<br>
-    [Street Address]<br>
-    [Postal Code / City]<br>
-    Germany
-  </p>
-</div>
+    .document {
+      position: relative;
+      background: linear-gradient(to bottom, #fffefb 0%, #fdfbf6 100%);
+      border: 1px solid #d9cfbf;
+      box-shadow: var(--shadow);
+      padding: 64px 58px 54px;
+      overflow: hidden;
+    }
 
-<h2>2. Contact</h2>
-<div class="contact-block">
-  <p>
-    Email: [your@email.com]<br>
-    Website: https://bookvoice.github.io
-  </p>
-</div>
+    .document::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 10px;
+      background: linear-gradient(90deg, var(--navy), var(--navy-soft), var(--gold));
+    }
 
-<h2>3. Responsible for Content</h2>
-<p>
-  The person responsible for the content of this website within the meaning of applicable law is the provider named above, unless otherwise stated in relation to specific content.
-</p>
+    .document::after {
+      content: "";
+      position: absolute;
+      top: 22px;
+      right: 22px;
+      width: 140px;
+      height: 140px;
+      border: 1px solid rgba(176, 139, 87, 0.14);
+      border-radius: 50%;
+      pointer-events: none;
+    }
 
-<h2>4. Disclaimer</h2>
-<p>
-  The contents of this website have been prepared with due care. However, no guarantee is given for the accuracy, completeness, or currentness of the information provided.
-</p>
+    h1 {
+      margin: 0;
+      font-size: 3rem;
+      line-height: 1.12;
+      color: var(--ink);
+      letter-spacing: -0.02em;
+    }
 
-<p>
-  Liability for external links, third-party content, or externally operated websites is excluded to the extent permitted by law. Responsibility for the contents of linked external pages lies solely with their respective operators.
-</p>
+    .subtitle {
+      margin: 18px 0 0 0;
+      max-width: 820px;
+      font-size: 1.06rem;
+      color: var(--muted);
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--line);
+    }
 
-<div class="law-panel">
-  <span class="law-title">Legal Basis</span>
-  <p>
-    This page is intended to fulfil general provider identification and legal disclosure obligations applicable to publicly accessible online services under German law.
-  </p>
-</div>
+    .hero-rule {
+      width: 90px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--gold), transparent);
+      margin: 22px 0 28px;
+    }
 
-<h2>5. Intellectual Property</h2>
-<p>
-  Unless otherwise indicated, the texts, digital materials, branding elements, and other content made available on this website are protected by applicable intellectual property laws. Any reproduction, distribution, or use beyond the limits permitted by law requires prior permission.
-</p>
+    .important-box {
+      margin: 28px 0 34px;
+      padding: 20px 22px;
+      background: linear-gradient(to right, #f8f2e8, #fbf8f2);
+      border: 1px solid #dfd1b8;
+      border-left: 5px solid var(--gold);
+    }
 
-<h2>6. Scope of Application</h2>
-<p>
-  This Legal Notice applies to this website and, where appropriate, to associated digital products, online publications, and related digital services offered under the BookVoice name, unless a separate legal notice is expressly provided for a specific service or platform.
-</p>
+    .important-box strong {
+      color: var(--navy);
+    }
 
-<p class="closing-note">
-  This page is provided for legal information purposes in connection with the operation of this website and associated digital services.
-</p>
+    h2 {
+      margin: 34px 0 12px;
+      font-size: 1.2rem;
+      color: var(--navy);
+      font-weight: 700;
+      position: relative;
+      padding-left: 18px;
+    }
+
+    h2::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.4em;
+      width: 8px;
+      height: 8px;
+      background: var(--gold);
+      border-radius: 50%;
+    }
+
+    p {
+      margin: 0 0 16px 0;
+      font-size: 1.03rem;
+    }
+
+    .contact-block,
+    .law-panel {
+      margin: 28px 0;
+      padding: 22px 24px;
+      background: #fcfaf5;
+      border: 1px solid var(--line);
+      border-left: 5px solid var(--navy);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.55);
+    }
+
+    .contact-block p,
+    .law-panel p {
+      margin: 0;
+    }
+
+    .law-title {
+      display: block;
+      margin-bottom: 10px;
+      color: var(--navy);
+      font-size: 0.92rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .closing-note {
+      margin-top: 38px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--navy);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(31, 53, 80, 0.25);
+    }
+
+    a:hover {
+      color: var(--navy-soft);
+      border-bottom-color: rgba(31, 53, 80, 0.5);
+    }
+
+    @media (max-width: 700px) {
+      .document {
+        padding: 36px 24px 34px;
+      }
+
+      h1 {
+        font-size: 2.1rem;
+      }
+
+      .subtitle,
+      p {
+        font-size: 1rem;
+      }
+
+      .page {
+        margin: 22px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <main class="document">
+      <h1>Legal Notice</h1>
+
+      <p class="subtitle">
+        Information provided in accordance with applicable legal disclosure requirements for this website and its associated digital services.
+      </p>
+
+      <div class="hero-rule"></div>
+
+      <div class="important-box">
+        <strong>Important Notice:</strong>
+        This Legal Notice contains the provider identification and essential contact information relating to the operation of this website and associated digital offerings.
+      </div>
+
+      <h2>1. Information according to § 5 DDG</h2>
+      <div class="contact-block">
+        <p>
+          <strong>BookVoice Studio</strong><br>
+          [Your First Name / Last Name]<br>
+          [Street Address]<br>
+          [Postal Code / City]<br>
+          Germany
+        </p>
+      </div>
+
+      <h2>2. Contact</h2>
+      <div class="contact-block">
+        <p>
+          Email: [your@email.com]<br>
+          Website: <a href="https://bookvoice.github.io">https://bookvoice.github.io</a>
+        </p>
+      </div>
+
+      <h2>3. Responsible for Content</h2>
+      <p>
+        The person responsible for the content of this website within the meaning of applicable law is the provider named above, unless otherwise stated in relation to specific content.
+      </p>
+
+      <h2>4. Disclaimer</h2>
+      <p>
+        The contents of this website have been prepared with due care. However, no guarantee is given for the accuracy, completeness, or currentness of the information provided.
+      </p>
+
+      <p>
+        Liability for external links, third-party content, or externally operated websites is excluded to the extent permitted by law. Responsibility for the contents of linked external pages lies solely with their respective operators.
+      </p>
+
+      <div class="law-panel">
+        <span class="law-title">Legal Basis</span>
+        <p>
+          This page is intended to fulfil general provider identification and legal disclosure obligations applicable to publicly accessible online services under German law.
+        </p>
+      </div>
+
+      <h2>5. Intellectual Property</h2>
+      <p>
+        Unless otherwise indicated, the texts, digital materials, branding elements, and other content made available on this website are protected by applicable intellectual property laws. Any reproduction, distribution, or use beyond the limits permitted by law requires prior permission.
+      </p>
+
+      <h2>6. Scope of Application</h2>
+      <p>
+        This Legal Notice applies to this website and, where appropriate, to associated digital products, online publications, and related digital services offered under the BookVoice name, unless a separate legal notice is expressly provided for a specific service or platform.
+      </p>
+
+      <p class="closing-note">
+        This page is provided for legal information purposes in connection with the operation of this website and associated digital services.
+      </p>
+    </main>
+  </div>
+</body>
+</html>
