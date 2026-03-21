@@ -1,58 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datenschutzerklärung | BookVoice</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – BookVoice</title>
+  <style>
+    :root {
+      --bg: #ece8df;
+      --paper: #fffdf9;
+      --ink: #161616;
+      --text: #2e2e2e;
+      --muted: #6f6a63;
+      --line: #d8cfbf;
+      --navy: #1f3550;
+      --navy-soft: #2d496b;
+      --gold: #b08b57;
+      --gold-soft: #d8c2a0;
+      --shadow: 0 14px 40px rgba(0, 0, 0, 0.10);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top, rgba(255,255,255,0.35), transparent 35%),
+        linear-gradient(to bottom, #efebe3 0%, #e7e2d8 100%);
+      line-height: 1.8;
+    }
+
+    .page {
+      max-width: 980px;
+      margin: 48px auto;
+      padding: 0 20px;
+    }
+
+    .document {
+      position: relative;
+      background: linear-gradient(to bottom, #fffefb 0%, #fdfbf6 100%);
+      border: 1px solid #d9cfbf;
+      box-shadow: var(--shadow);
+      padding: 64px 58px 54px;
+      overflow: hidden;
+    }
+
+    .document::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 10px;
+      background: linear-gradient(90deg, var(--navy), var(--navy-soft), var(--gold));
+    }
+
+    .document::after {
+      content: "";
+      position: absolute;
+      top: 22px;
+      right: 22px;
+      width: 140px;
+      height: 140px;
+      border: 1px solid rgba(176, 139, 87, 0.14);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .label {
+      display: inline-block;
+      margin-bottom: 18px;
+      padding: 7px 14px;
+      font-size: 0.78rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--navy);
+      border: 1px solid var(--gold-soft);
+      background: linear-gradient(to right, #faf6ee, #f7f0e4);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 3rem;
+      line-height: 1.12;
+      color: var(--ink);
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      margin: 18px 0 0 0;
+      max-width: 820px;
+      font-size: 1.06rem;
+      color: var(--muted);
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero-rule {
+      width: 90px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--gold), transparent);
+      margin: 22px 0 28px;
+    }
+
+    .important-box {
+      margin: 28px 0 34px;
+      padding: 20px 22px;
+      background: linear-gradient(to right, #f8f2e8, #fbf8f2);
+      border: 1px solid #dfd1b8;
+      border-left: 5px solid var(--gold);
+    }
+
+    .important-box strong {
+      color: var(--navy);
+    }
+
+    h2 {
+      margin: 34px 0 12px;
+      font-size: 1.2rem;
+      color: var(--navy);
+      font-weight: 700;
+      position: relative;
+      padding-left: 18px;
+    }
+
+    h2::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.4em;
+      width: 8px;
+      height: 8px;
+      background: var(--gold);
+      border-radius: 50%;
+    }
+
+    p {
+      margin: 0 0 16px 0;
+      font-size: 1.03rem;
+    }
+
+    .law-panel {
+      margin: 28px 0;
+      padding: 22px 24px;
+      background: #fcfaf5;
+      border: 1px solid var(--line);
+      border-left: 5px solid var(--navy);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.55);
+    }
+
+    .law-panel .law-title {
+      display: block;
+      margin-bottom: 10px;
+      color: var(--navy);
+      font-size: 0.92rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .law-panel p {
+      margin: 0;
+      color: #3a3937;
+    }
+
+    .closing-note {
+      margin-top: 38px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--navy);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(31, 53, 80, 0.25);
+    }
+
+    a:hover {
+      color: var(--navy-soft);
+      border-bottom-color: rgba(31, 53, 80, 0.5);
+    }
+
+    @media (max-width: 700px) {
+      .document {
+        padding: 36px 24px 34px;
+      }
+
+      h1 {
+        font-size: 2.1rem;
+      }
+
+      .subtitle,
+      p {
+        font-size: 1rem;
+      }
+
+      .page {
+        margin: 22px auto;
+      }
+    }
+  </style>
 </head>
-
 <body>
-    <div class="container">
-        <header>
-            <div class="logo">BookVoice</div>
-        </header>
+  <div class="page">
+    <main class="document">
+      <div class="label">Legal Notice</div>
 
-        <div class="legal-container">
-            <h1>Privacy Policy</h1>
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">
+        Information on the collection, processing, and protection of personal data in connection with the use of this website and related communications.
+      </p>
 
-            <div class="legal-section">
-                <h2>1. Data Protection at a Glance</h2>
-                <p>We take the protection of your personal data very seriously. We treat your personal data
-                    confidentially and in accordance with the statutory data protection regulations and this privacy
-                    policy.</p>
-            </div>
+      <div class="hero-rule"></div>
 
-            <div class="legal-section">
-                <h2>2. Hosting via GitHub Pages</h2>
-                <p>This website is hosted via GitHub Pages. GitHub may collect log data from visitors (IP address, user
-                    agent, referrer). This is technically necessary for the stable operation of the website.</p>
-            </div>
+      <div class="important-box">
+        <strong>Important Notice:</strong>
+        The protection of personal data is taken seriously. Personal data is processed only where necessary for the technical operation of this website, for communication purposes, or where required by law.
+      </div>
 
-            <div class="legal-section">
-                <h2>3. Contact / Email</h2>
-                <p>If you contact us via email, your details will be stored for the purpose of processing the request
-                    and in case of follow-up questions.</p>
-            </div>
+      <h2>1. Data Protection at a Glance</h2>
+      <p>
+        This Privacy Policy explains the nature, scope, and purpose of the processing of personal data in connection with this website. Personal data is treated confidentially and in accordance with applicable data protection law.
+      </p>
 
-            <div class="legal-section">
-                <h2>4. Your Rights</h2>
-                <p>You have the right to receive information about your stored personal data, its origin and recipient
-                    and the purpose of data processing at any time free of charge, as well as the right to correction,
-                    blocking or deletion of this data.</p>
-            </div>
-        </div>
+      <h2>2. Hosting via GitHub Pages</h2>
+      <p>
+        This website is hosted via GitHub Pages. When this website is accessed, technical data may be processed automatically by the hosting provider, including but not limited to IP address, browser type, operating system, referrer URL, date and time of access, and similar server log data.
+      </p>
+      <p>
+        Such processing is technically necessary in order to ensure the secure, stable, and reliable provision of the website.
+      </p>
 
-        <footer>
-            <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="impressum.html">Legal Notice</a>
-                <a href="privacy.html">Privacy Policy</a>
-            </div>
-            <p>© 2024 BookVoice Studio. All rights reserved.</p>
-        </footer>
-    </div>
+      <h2>3. Contact by Email</h2>
+      <p>
+        If contact is made by email, the information transmitted, including the email address and any content contained in the message, may be processed for the purpose of responding to the request and any related follow-up communication.
+      </p>
+      <p>
+        Such data will not be used for unrelated purposes and will not be disclosed to third parties except where disclosure is required by law or necessary for the legitimate handling of the communication.
+      </p>
+
+      <h2>4. Cookies and Tracking</h2>
+      <p>
+        This website does not intentionally use cookies, analytics tools, tracking technologies, or advertising scripts of its own. However, technical processing by the hosting provider may occur as part of the normal delivery of the website.
+      </p>
+
+      <div class="law-panel">
+        <span class="law-title">Legal Basis</span>
+        <p>
+          Personal data is processed only to the extent necessary for the technical provision of the website, for communication handling, and for compliance with applicable legal obligations. Where required, such processing is based on legitimate interest, pre-contractual communication, or statutory obligations under applicable data protection law.
+        </p>
+      </div>
+
+      <h2>5. Data Retention</h2>
+      <p>
+        Personal data shall be stored only for as long as necessary for the purpose for which it was collected, for the handling of communications, or for compliance with applicable legal retention obligations.
+      </p>
+
+      <h2>6. Rights of Data Subjects</h2>
+      <p>
+        Subject to the applicable legal requirements, individuals may have the right to request access to personal data concerning them, rectification of inaccurate data, erasure, restriction of processing, and objection to processing, as well as the right to lodge a complaint with a competent supervisory authority.
+      </p>
+
+      <h2>7. External Links</h2>
+      <p>
+        This website may contain links to third-party websites or platforms. No responsibility is assumed for the privacy practices, content, or legal compliance of external websites operated by third parties.
+      </p>
+
+      <h2>8. Contact</h2>
+      <p>
+        For privacy-related inquiries, contact may be made via the email address provided in the Legal Notice / Imprint section of this website.
+      </p>
+
+      <p class="closing-note">
+        This page is provided for legal information purposes in connection with the operation of this website and associated digital services.
+      </p>
+    </main>
+  </div>
 </body>
-
 </html>
